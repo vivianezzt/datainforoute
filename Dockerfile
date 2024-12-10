@@ -1,6 +1,8 @@
 FROM node:22.8.0-slim
 
-RUN apt update && apt install openssl procps -y
+RUN apt-get update && \
+    apt-get install -y openssl procps && \
+    npm install -g @nestjs/cli@10.0.0
 
 USER node 
 

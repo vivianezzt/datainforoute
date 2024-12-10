@@ -1,1 +1,15 @@
-get http://localhost:3000/places?text=av governador valadares, betom, 1000My Project 14745
+GET http://localhost:3000/places?text=av governador valadares, betim, 1000
+
+###
+
+GET http://localhost:3000/places?text=av amazonas, belo horizonte, 1000
+
+###
+@originId = ChIJgUaiCqCcmAARTur7mTUSUe4
+@destinationId = ChIJvSzFjs5ZzpQRjKTDjcPluI4
+
+### 
+GET http://localhost:3000/directions=originId=&destinationId
+
+###
+GET http://localhost:3000/directions?originId={{originId}}&destinationId={{destinationId}}

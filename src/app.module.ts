@@ -7,14 +7,11 @@ import { ConfigModule } from '@nestjs/config';
 @Module({
   imports: [
     ConfigModule.forRoot({
-      isGlobal: true,
-
+      isGlobal: true, // Torna as variáveis de ambiente disponíveis globalmente
     }),
-    MapsModule
+    MapsModule, // Módulo para integração com APIs de mapas
   ],
-  controllers: [AppController],
-  providers: [AppService],
+  controllers: [AppController], // Controladores para gerenciamento de rotas HTTP
+  providers: [AppService], // Provedores para lógica de negócios e serviços
 })
 export class AppModule {}
-
-// container de serviços (camada lógica)

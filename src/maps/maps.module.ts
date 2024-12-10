@@ -15,5 +15,6 @@ import { DirectionsService } from './directions/directions.service';
       useValue: new GoogleMapsClient(), // Instância do GoogleMapsClient
     },
   ],
+  exports: [DirectionsService],
 })
 export class MapsModule {}
